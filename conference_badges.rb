@@ -23,5 +23,11 @@ def assign_rooms(array)
 end
 
 def printer(array)
+  arr1 = batch_badge_creator(array)
+  arr2 = assign_rooms(array)
   
+  arr1.each do |index|
+    puts arr1[index]
+    puts arr2[index]
+  end
 end
