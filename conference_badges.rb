@@ -14,7 +14,12 @@ end
 
 def assign_rooms(array)
   counter = 1
-  
+  new_array = Array.new
+  array.each_with_index do |value, index|
+    new_array.push("Hello, #{array[index]}! You'll be assigned to room #{counter}!")
+      counter += 1 
+  end
+  return new_array
 end
 
 def printer(array)
