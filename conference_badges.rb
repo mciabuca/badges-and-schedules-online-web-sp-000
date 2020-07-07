@@ -27,7 +27,9 @@ def printer(array)
   arr2 = assign_rooms(array)
   
   arr1.each do |index|
-    puts arr1[index]
-    puts arr2[index]
+    puts index
+  end
+  arr2.each do |index|
+    puts index
   end
 end
